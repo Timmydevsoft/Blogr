@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  --Lightred: hsl(356, 100%, 66%);
+  --Verylightred: hsl(355, 100%, 74%);
+  --Verydarkblue : hsl(208, 49%, 24%);
+  --footer-text: hsl(240, 2%, 79%);
+  --text: hsl(0, 0%, 100%);
+  --Verydarkgrayishblue: hsl(207, 13%, 34%);
+  --vltredbg:  hsl(13, 100%, 72%);
+  --ltredbg: hsl(353, 100%, 62%);
+   --bgrayishblue-bg: hsl(237, 17%, 21%);
+   --vddesbg:: hsl(237, 23%, 32%);
+  font-weight: 400;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.overpass {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.no-scroll-bar::-webkit-scrollbar{
+  display: none;
+}
+
+.circle-bg{
+  background-image: url("../src/images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+
+}
+
+@media(min-width: 648px){
+  .circle-bg{
+    background-size: 60%;
+    background-position: 0 100%;
+  }
+}
+
+@media(max-width: 647px){
+  .circle-bg{
+    background-size: 130%;
+    background-position:center -20vh;
+  }
+}
+
